@@ -1,0 +1,11 @@
+# Deny PHP/script execution in the uploads directory
+# Images are served directly; no code should run here.
+<FilesMatch "\.(php|php3|php4|php5|php7|phtml|shtml|cgi|pl|py|rb|sh|bash)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order Allow,Deny
+        Deny from all
+    </IfModule>
+</FilesMatch>

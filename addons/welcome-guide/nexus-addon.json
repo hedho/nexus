@@ -1,0 +1,8 @@
+{
+  "name":        "Welcome & Formatting Guide",
+  "description": "Adds a collapsible formatting guide to the reply box showing users how to use Markdown, code blocks, quotes, and more.",
+  "version":     "1.0.0",
+  "author":      "Nexus Forum",
+  "hooks":       ["render_post_footer"],
+  "requires":    { "nexus": ">=19" }
+}

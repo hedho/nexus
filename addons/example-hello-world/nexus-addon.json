@@ -1,0 +1,9 @@
+{
+  "name":        "Hello World",
+  "description": "A sample addon that demonstrates the Nexus addon API. Adds a small footer note to every post.",
+  "version":     "1.0.0",
+  "author":      "Nexus Forum",
+  "url":         "",
+  "hooks": ["render_post_footer", "after_topic_created"],
+  "requires": { "nexus": ">=14" }
+}
